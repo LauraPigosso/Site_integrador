@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Pompiere&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Happy+Monkey&display=swap');
+
 * {
 	margin: 0;
 	padding: 0;
@@ -9,17 +12,30 @@ body {
 }
 
 header {
-	background-color: #333;
-	color: #fff;
+	background-color: #f7b8c1;
+	color: #b0d6f0;
 	padding: 20px;
+	border:4px solid#f79baa;
+	border-radius: 10px;
+
 }
 
+
+header img {
+	padding: 1em;
+	position: relative;
+	left:1em;
+	width: 200px;
+}
+
+
 .container {
-	max-width: 1200px;
+	max-width: 70em;
 	margin: 0 auto;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+
 
 }
 
@@ -33,62 +49,67 @@ nav ul li {
 }
 
 nav ul li a {
-	color: #fff;
-	text-decoration: none;
-	font-size: 18px;
-}
+	color: #272320;
+	font-size: clamp(1em, 1em + 0.5vw, 3em);
+	font-family: 'Happy Monkey', cursive;}
 
 nav ul li a:hover {
 	text-decoration: underline;
 }
 
-#search {
-	display: flex;
+#carrinho {
+	color: #f8f8f8;
+	font-family: 'Pompiere', cursive;
+	padding: 0.7em 1.7em;
+	font-size: 18px;
+	border-radius: 0.5em;
+	background: #FF6B7A;
+	transition: all .3s;
+	font-family: 'Concert One', cursive;
+	box-shadow: 6px 6px 12px #C9959D,
+				-6px -6px 12px #F5D8D8;
 }
 
-#search input[type="text"] {
-	padding: 10px;
-	border: none;
-	border-radius: 5px 0 0 5px;
+#carrinho a {
+	text-decoration: none;
+	color: #f8f8f8;
 }
 
-#search button {
-	background-color: #ff8c00;
-	color: #fff;
-	border: none;
-	padding: 10px;
-	border-radius: 0 5px 5px 0;
-	cursor: pointer;
+#carrinho:hover {
+	background-color: #FF6B7A;
+
 }
 
-#login {
-	background-color: #ff8c00;
-	color: #fff;
-	padding: 10px;
-	border-radius: 5px;
-	cursor: pointer;
-}
+#carrinho:active {
+	box-shadow: inset 4px 4px 12px #f7b8c1,
+				inset -4px -4px 12px #f7b8c1;
+   }
 
-#login:hover {
-	background-color: #ffa500;
-}
 
 .carousel {
     position: relative;
     width: 100%;
     margin: 0 auto;
     overflow: hidden;
+	padding: 2em 0;
+
   }
   
   .carousel-container {
     display: flex;
     transition: transform 0.5s ease;
+	
   }
   
   .carousel-item {
     flex: 0 0 19%; /* display 3 items at a time */
     padding: 10px;
     text-align: center;
+	background-color: #b0d6f0;
+	margin: 4px;
+	border:3px solid #8bc3f9;
+	border-radius: 10px;
+
   }
   
   .carousel-item img {
@@ -99,9 +120,8 @@ nav ul li a:hover {
   
   .carousel-item h3 {
     font-size: 20px;
-    font-weight: bold;
     margin-bottom: 5px;
-  }
+	font-family: 'Pompiere', cursive;  }
   
   .carousel-item p {
     font-size: 18px;
@@ -114,7 +134,7 @@ nav ul li a:hover {
     top: 50%;
     transform: translateY(-50%);
     background-color: rgba(0, 0, 0, 0.3);
-    color: #fff;
+    color: #fdfaf9;
     border: none;
     outline: none;
     font-size: 24px;
@@ -158,39 +178,42 @@ nav ul li a:hover {
 
 #daily-deals {
 	background-color: #f8f8f8;
-	padding: 50px 0;
+	padding: em 0;
 }
 
-.deal-card {
-	background-color: #fff;
+.Promoções {
+	background-color: #f7e18e;
 	border-radius: 5px;
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 	padding: 20px;
 	text-align: center;
 	margin: 20px;
 }
+ 
+.Promoções img{
+	width: 100%;
+	height: 0%;
+}
 
-.deal-card h4 {
+.Promoções h4 {
 	color: #ff8c00;
 	font-size: 24px;
 	margin-bottom: 10px;
 }
 
-.deal-card p {
+.Promoções p {
 	font-size: 18px;
 	margin-bottom: 10px;
 }
 
-.deal-card button {
+.Promoções button {
 	background-color: #ff8c00;
-	color: #fff;
-	border: none;
+	color: #f7e18e;
 	padding: 10px 20px;
-	border-radius: 5px;
 	cursor: pointer;
 }
 
-.deal-card button:hover {
+.Promoções button:hover {
 	background-color: #ffa500;
 }
 
@@ -210,7 +233,7 @@ form input[type="email"] {
 
 form button[type="submit"] {
 	background-color: #ff8c00;
-	color: #fff;
+	color: #fdfaf9;
 	border: none;
 	padding: 10px 20px;
 	border-radius: 0 5px 5px 0;
@@ -223,7 +246,7 @@ form button[type="submit"]:hover {
 
 footer {
 	background-color: #333;
-	color: #fff;
+	color: #fdfaf9;
 	padding: 50px 0;
 }
 
