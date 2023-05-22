@@ -8,7 +8,7 @@
 }
 
 body {
-	font-family: Arial, sans-serif;
+	font-family: 'Happy Monkey', cursive;
 }
 
 header {
@@ -59,20 +59,19 @@ nav ul li a:hover {
 
 #carrinho {
 	color: #f8f8f8;
-	font-family: 'Pompiere', cursive;
+	font-family: 'Happy Monkey', cursive;
 	padding: 0.7em 1.7em;
 	font-size: 18px;
 	border-radius: 0.5em;
 	background: #FF6B7A;
 	transition: all .3s;
-	font-family: 'Concert One', cursive;
 	box-shadow: 6px 6px 12px #C9959D,
 				-6px -6px 12px #F5D8D8;
 }
 
 #carrinho a {
 	text-decoration: none;
-	color: #f8f8f8;
+	color: #272320;
 }
 
 #carrinho:hover {
@@ -119,12 +118,12 @@ nav ul li a:hover {
   }
   
   .carousel-item h3 {
-    font-size: 20px;
+    font-size: 1.5em;
     margin-bottom: 5px;
 	font-family: 'Pompiere', cursive;  }
   
   .carousel-item p {
-    font-size: 18px;
+    font-size: ;
     margin: 0;
   }
   
@@ -183,7 +182,8 @@ nav ul li a:hover {
 
 .Promoções {
 	background-color: #f7e18e;
-	border-radius: 5px;
+	border:3px solid #ffc55b;
+	border-radius: 10px;
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 	padding: 20px;
 	text-align: center;
@@ -191,19 +191,19 @@ nav ul li a:hover {
 }
  
 .Promoções img{
-	width: 100%;
-	height: 0%;
+	max-width: 100%;
+	height: auto;
 }
 
 .Promoções h4 {
 	color: #ff8c00;
 	font-size: 24px;
-	margin-bottom: 10px;
+	margin-bottom: 4px;
 }
 
 .Promoções p {
 	font-size: 18px;
-	margin-bottom: 10px;
+	margin-bottom: 4px;
 }
 
 .Promoções button {
