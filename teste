@@ -1,0 +1,60 @@
+<div class="Promoções">
+				<img src="imagens/imagem1.jpg" alt="Adesivos fantasminhas LGBTQIA+">
+				<div class="details">
+					<h3>Sticker fantasminhas<br> LGBTQIA+</h3>
+					<p>Compre 3 kit´s de adesivos e<br> ganhe 10% de desconto!</p>
+					<a href="#" class="buy-btn">Buy Now</a>
+				</div>
+			</div>
+			<div class="Promoções">
+				<img src="imagens/imagem2.jpg" alt="T-Shirt 5">
+				<div class="details">
+					<h3>Sticker artistas <br> tristes</h3>
+					<p>Compre 3 kit´s de adesivos e<br> ganhe 10% de desconto!</p>
+					<a href="#" class="buy-btn">Buy Now</a>
+				</div>
+			</div>
+			<div class="Promoções">
+				<img src="imagens/imagem3.jpg" alt="T-Shirt 6">
+				<div class="details">
+					<h3>Sticker pessoinhas<br> cogumelos</h3>
+					<p>Compre 3 kit´s de adesivos e<br> ganhe 10% de desconto!</p>
+					<a href="#" class="buy-btn">Buy Now</a>
+				</div>
+
+                .Promoções {
+                    background-color: #f7e18e;
+                    border:3px solid #ffc55b;
+                    border-radius: 10px;
+                    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+                    padding: 20px;
+                    text-align: center;
+                    margin: 20px;
+                }
+                 
+                .Promoções img{
+                    max-width: 100%;
+                    height: auto;
+                }
+                
+                .Promoções h4 {
+                    color: #ff8c00;
+                    font-size: 24px;
+                    margin-bottom: 4px;
+                }
+                
+                .Promoções p {
+                    font-size: 18px;
+                    margin-bottom: 4px;
+                }
+                
+                .Promoções button {
+                    background-color: #ff8c00;
+                    color: #f7e18e;
+                    padding: 10px 20px;
+                    cursor: pointer;
+                }
+                
+                .Promoções button:hover {
+                    background-color: #ffa500;
+                }
