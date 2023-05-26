@@ -17,6 +17,7 @@ header {
   border-radius: 10px;
   align-items: center;
   justify-content: space-between;
+
 }
 
 
@@ -30,11 +31,10 @@ header img {
 
 .container {
 	max-width: 70em;
-	margin: 3px;
-  padding: 4;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+  margin: 0 auto;
 
 
 }
@@ -45,14 +45,14 @@ nav ul {
 }
 
 nav ul li {
-	margin-right: 20px;
+	margin-right: 2rem;
 }
 
 nav ul li a {
 	color: #272320;
 	font-size: clamp(1em, 1em + 0.5vw, 3em);
   font-family: 'Quicksand', sans-serif;
-  margin: 3px;
+  justify-content: space-between;
 }
 
 nav ul li a:hover {
@@ -246,7 +246,7 @@ footer h3 {
 	margin-bottom: 20px;
 }
 
-@media screen and (min-width: 270px) and (max-width: 1000px) {
+@media screen and (min-width: 300px) and (max-width: 770px) {
   header img {
     display: none;
     visibility: hidden;
@@ -266,9 +266,15 @@ footer h3 {
 
 }
 
+  #carrinho {
+    display: none;
+    visibility: hidden;
+    margin: 0cm;
+  } 
+
 }
 
-@media screen and (min-width: 0px) and (max-width: 768px) {
+@media screen and (max-width: 2000px) {
   .carousel-container {
     width: calc(100% - 40px);
   }
@@ -281,14 +287,9 @@ footer h3 {
     margin-right: 20px;
   }
 
-  #newsletter h2 {
-    display: none;
-    visibility: hidden;
-    margin: 0cm;
-  }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 770px) {
   .carousel-container {
     width: 100%;
   }
@@ -299,10 +300,48 @@ footer h3 {
   }
 
   #carrinho {
+    color: #d0e9e9;
+    font-family: 'Quicksand', sans-serif;
+    padding: 0.5em 1.5em;
+    margin: 0.5em;
+    font-size: 15px;
+    border-radius: 0.5em;
+    background: #b6e2e2;
+    transition: all .3s;
+    box-shadow: 6px 6px 12px #81d1d1,
+          -6px -6px 12px #ffffff;
+}
+}
+@media screen and (max-width: 600px) {
+  #carrinho {
     display: none;
     visibility: hidden;
     margin: 0cm;
-  } 
+  }
+
+  #newsletter h2 {
+    display: none;
+    visibility: hidden;
+    margin: 0cm;
+  }
+}
+@media screen and (max-width: 420px) {
+  #newsletter h2 {
+    display: none;
+    visibility: hidden;
+    margin: 0cm;
+  }
+
+  nav ul li a {
+    font-size: 1rem;
+
+  }
+
+  #carrinho {
+    display: none;
+    visibility: hidden;
+    margin: 0cm;
+  }
 }
 
 @media screen and (max-width: 300px) {
@@ -312,16 +351,21 @@ footer h3 {
     margin: 0cm;
   }
 
+  nav ul li a {
+    font-size: 0.6rem;
+
+  }
+
   #carrinho {
     display: none;
     visibility: hidden;
     margin: 0cm;
-  } 
-
-  nav ul li a {
-    font-size: 0.8rem;
-
   }
 
+  header img {
+    display: none;
+    visibility: hidden;
+    margin: 0cm;
+  }
 }
 }
