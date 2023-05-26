@@ -3,7 +3,7 @@ const prevButton = document.querySelector('.prev-button');
 const nextButton = document.querySelector('.next-button');
 const carouselItems = document.querySelectorAll('.carousel-item');
 const numItems = carouselItems.length;
-const itemsPerSlide = 1;
+const itemsPerSlide = 0.7;
 let index = 0;
 
 prevButton.addEventListener('click', moveCarouselLeft);
