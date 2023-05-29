@@ -246,7 +246,7 @@ footer h3 {
 	margin-bottom: 20px;
 }
 
-@media screen and (min-width: 300px) and (max-width: 770px) {
+@media screen and (min-width: 200px) and (max-width: 770px) {
   header img {
     display: none;
     visibility: hidden;
@@ -344,7 +344,7 @@ footer h3 {
   }
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 270px) {
   #newsletter h2 {
     display: none;
     visibility: hidden;
@@ -368,4 +368,5 @@ footer h3 {
     margin: 0cm;
   }
 }
+
 }
