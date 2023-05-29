@@ -1,0 +1,99 @@
+/* Arquivo carrinho.css */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+#logo {
+  display: flex;
+  align-items: center;
+}
+
+#logo img {
+  height: 50px;
+}
+
+.product-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.product {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding: 20px 0;
+}
+
+.product img {
+  height: 100px;
+}
+
+.product-name {
+  flex-grow: 1;
+  margin: 0 20px;
+}
+
+.product-quantity {
+  display: flex;
+  align-items: center;
+}
+
+
+.product-price {
+  margin-right: 20px;
+}
+
+
+.product-quantity button {
+  border: none;
+  background-color: transparent;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.total {
+  margin-top: 20px;
+  text-align: right;
+}
+
+footer {
+  margin-top: 20px;
+  padding: 20px 0;
+  background-color: #ddd;
+}
+
+#contact,
+#sobre {
+  margin-bottom: 20px;
+}

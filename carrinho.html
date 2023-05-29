@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Criativa - Carrinho</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="carrinho.css">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div id="logo">
+        <a href="index.html">
+          <img src="imagens/logoazul.png" alt="logo">
+        </a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="lista.html">Lista de Produtos</a></li>
+          <li><a href="#Sobre nòs">Sobre nós</a></li>
+          <li><a href="#contact">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <h1>Seu Carrinho</h1>
+    <div class="product-grid">
+      <div class="product" data-product-id="1">
+        <img src="imagens/imagem1.jpg" alt="Grid 1">
+        <div class="product-name">Sticker LGBTQIA+</div>
+        <div class="product-price">$2.00</div>
+        <div class="product-quantity">
+          <button class="menos">-</button>
+          <span class="quantidade">0</span>
+          <button class="mais">+</button>
+        </div>
+      </div>
+
+      <!-- Repita a estrutura acima para cada produto -->
+
+    </div>
+
+
+    <div class="total">
+      <h2>Quantidade de itens: <span id="quantidade-total">0</span></h2>
+      <h2>Valor total da compra: <span id="valor-total">$0.00</span></h2>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div id="contact">
+        <h3>Fale comigo</h3>
+        <p>Rua das Sakuras, 805<br>
+          Campinas, SP<br>
+          Phone: (12) 3220-7070<br>
+          Email: LauraPig@gmail.com</p>
+      </div>
+      <div id="sobre">
+        <h3>Sobre o site</h3>
+        <p>Bom dia a todos, este site foi produzido para o projeto integrador do SENAI Roberto Mange.<br>
+          Meu nome é Laura Pigosso e estou no primeiro semestre no curso de Desenvolvimento de<br> sistemas.
+          Para ele usei ferramentas como: HTML, CSS, Javascript, Adobe Photoshope, Canva, Coolors<br>
+          e entre outros. As imagens dos produtos foram retirados do Pinterest onde o artista é<br>
+          deconhecido por mim.
+          Este trabalho contém as participações dos professores: Celso, Lindonar e Rodrigo.<br>
+        </p>
+      </div>
+    </div>
+  </footer>
+  <script type="text/javascript" src="carrinho.js"></script>
+
+</body>
+
+
+</html>
