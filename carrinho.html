@@ -12,8 +12,8 @@
   <header>
     <nav>
       <ul>
-        <li><a href="index.html">Tela inicial</a></li>
-        <li><a href="lista.html">Lista de Produtos</a></li>
+        <li><a href="index.html">Tela inicial</a></li>  <!--te leva para o menu-->
+        <li><a href="lista.html">Lista de Produtos</a></li>  <!--te leva para a lista de produtos-->
         <li><a href="#sobre">Sobre nós</a></li>
         <li><a href="#contact">Contato</a></li>
       </ul>
@@ -23,15 +23,18 @@
 
   <div class="container">
     <h1>Seu Carrinho</h1>
-    <div class="product-grid">
+    <div class="product-grid"> <!--usei grid para deixar reponsivo-->
+
+      <!-- Os seguintes blocos de codigo representam produtos individuais -->
+
       <div class="product" data-product-id="1">
         <img src="imagens/imagem1.jpg" alt="Grid 1">
         <div class="product-name">Sticker LGBTQIA+</div>
-        <div class="product-price">$2.00</div>
-        <div class="product-quantity">
-          <button class="menos">-</button>
-          <span class="quantidade">0</span>
-          <button class="mais">+</button>
+        <div class="product-price">$2.00</div> <!--preco-->
+        <div class="product-quantity"> 
+          <button class="menos">-</button> <!--muda para mais-->
+          <span class="quantidade">0</span> <!--muda de acordo com a quantidade-->
+          <button class="mais">+</button> <!--muda para menos-->
         </div>
       </div>
 
@@ -40,7 +43,7 @@
         <div class="product-name">Sticker artistas</div>
         <div class="product-price">$3.00</div>
         <div class="product-quantity">
-          <button class="menos">-</button>
+          <button class="menos">-</button> 
           <span class="quantidade">0</span>
           <button class="mais">+</button>
         </div>
@@ -139,8 +142,8 @@
 
 
     <div class="total">
-      <h2>Quantidade de itens: <span id="quantidade-total">0</span></h2>
-      <h2>Valor total da compra: <span id="valor-total">$0.00</span></h2>
+      <h2>Quantidade de itens: <span id="quantidade-total">0</span></h2> <!--muda de acordo com a quantidade total-->
+      <h2>Valor total da compra: <span id="valor-total">$0.00</span></h2> <!--sera somado os precos no js e mostrara aqui-->
     </div>
   </div>
 
@@ -165,7 +168,8 @@
       </div>
     </div>
   </footer>
-  <script type="text/javascript" src="carrinho.js"></script>
+  <script type="text/javascript" src="carrinho.js"></script>  <!--chamar o javascript-->
+
 
 </body>
 

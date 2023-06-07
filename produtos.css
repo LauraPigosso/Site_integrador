@@ -37,11 +37,11 @@ body {
 }
 
 #botao {
-  color: #d0e9e9;
+  color: #000000;
   font-family: 'Quicksand', sans-serif;
   padding: 0.7em 1.7em;
   margin: 0.5em;
-  font-size: 18px;
+  font-size: 20px;
   border-radius: 0.5em;
   background: #b6e2e2;
   transition: all .3s;
@@ -105,7 +105,7 @@ body {
 }
 
 @media only screen and (min-width: 968px) {
-  .parallax {
+  .foto {
     background-size: 54vw;
     background-position: 0vw, 0vw;
   }
@@ -113,7 +113,7 @@ body {
 
 
 @media only screen and (max-width: 968px) {
-  .parallax {
+  .foto {
     background-size: 63vw;
 
   }
@@ -122,7 +122,7 @@ body {
 
 
 @media only screen and (max-width: 778px) {
-  .parallax {
+  .foto {
     background-size: 95vw;
     background-position: top;
   }
@@ -130,7 +130,7 @@ body {
 
 
 
-.parallax {
+.foto {
   position: relative;
   height: 100%;
   width: 100%;
@@ -146,7 +146,7 @@ body {
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.parallax h1 {
+.foto h1 {
   text-align: center;
   font-size: clamp(1em, 1em + 1vw, 1.5em);
   backdrop-filter: blur(2px);
@@ -154,7 +154,7 @@ body {
   border-radius: 20%;
 }
 
-.parallax::before {
+.foto::before {
   content: "";
   position: absolute;
   top: 0;
