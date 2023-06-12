@@ -47,7 +47,7 @@ body {
   transition: all .3s;
   box-shadow: 6px 6px 12px #81d1d1, -6px -6px 12px #ffffff;
 }
-/* Estiliza um elemento com o ID 'botao': define a cor do texto como preto, a fonte 'Quicksand', o preenchimento (padding), a margem, o tamanho da fonte, o raio do canto, a cor de fundo, a transição e a sombra */
+/* define a cor do texto do botao como preto, a fonte 'Quicksand', o preenchimento interno, a margem, o tamanho da fonte, o raio do canto, a cor de fundo, a transição e a sombra */
 
 #botap a {
   text-decoration: none;
@@ -75,7 +75,7 @@ body {
   background-color: #fff;
   color: #d0e9e9;
 }
-/*configura um layout de grade: define a exibição como grade, espaçamento entre as células, colunas e áreas da grade, além de cores de fundo e de texto */
+/* define a exibição como grade, espaçamento entre as células, colunas e áreas da grade, além de cores de fundo e de texto */
 
 .box {
   background-color: #ebc3c2;
@@ -107,14 +107,14 @@ body {
     background-position: 0vw, 0vw;
   }
 }
-/*estilos específicos quando a largura da tela é maior ou igual a 968px */
+/*quando a largura da tela é maior ou igual a 968px eu altero o tamanho da foto e sua posiçao */
 
 @media only screen and (max-width: 968px) {
   .foto {
     background-size: 63vw;
   }
 }
-/* estilos específicos quando a largura da tela é menor que 968px */
+/* quando a largura da tela é menor que 968px eu altero o tamanho da foto e sua posiçao */
 
 @media only screen and (max-width: 778px) {
   .foto {
@@ -122,7 +122,7 @@ body {
     background-position: top;
   }
 }
-/* Aplica estilos específicos quando a largura da tela é menor que 778px*/
+/* estilos específicos quando a largura da tela é menor que 778px*/
 
 .foto {
   position: relative;
