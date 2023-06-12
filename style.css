@@ -6,7 +6,7 @@
 	padding: 0;
 	box-sizing: border-box;
 }
-/* configuração padrão para todos os elementos: margem, preenchimento e modelo de caixa */
+/* configuraçao padrao para todos os elementos: margem, preenchimento e modelo de caixa */
 
 body {
 	font-family: 'Quicksand', sans-serif;
@@ -21,7 +21,7 @@ header {
 	align-items: center;
 	justify-content: space-between;
 }
-/* define a cor de fundo, raio do canto, display flex e alinhamento do conteúdo */
+/* define a cor de fundo, raio do canto, display flex e alinhamento do conteudo */
 
 header img {
 	padding: 1em;
@@ -38,7 +38,7 @@ header img {
 	align-items: center;
 	justify-content: space-between;
 }
-/* define a largura máxima, margem, display flex e alinhamento do conteúdo */
+/* define a largura maxima, margem, display flex e alinhamento do conteudo */
 
 nav ul {
 	list-style: none;
@@ -61,10 +61,10 @@ nav ul li a {
 nav ul li a:hover {
 	text-decoration: underline;
 }
-/* define uma decoração de texto */
+/* define uma decoracao de texto */
 
 #carrinho {
-	color: #d0e9e9;
+	color: #000000;
 	font-family: 'Quicksand', sans-serif;
 	padding: 0.7em 1.7em;
 	margin: 0.5em;
@@ -74,13 +74,13 @@ nav ul li a:hover {
 	transition: all 0.3s;
 	box-shadow: 6px 6px 12px #81d1d1, -6px -6px 12px #ffffff;
 }
-/* define a cor do texto, fonte 'Quicksand', preenchimento, margem, tamanho da fonte, raio do canto, cor de fundo, transição e sombra */
+/* define a cor do texto, fonte 'Quicksand', preenchimento, margem, tamanho da fonte, raio do canto, cor de fundo, transicao e sombra */
 
 #carrinho a {
 	text-decoration: none;
 	color: #272320;
 }
-/* remove a decoração do texto e define a cor do texto */
+/* remove a decoracao do texto e define a cor do texto */
 
 #carrinho:hover {
 	background-color: #b7cccc;
@@ -99,13 +99,13 @@ nav ul li a:hover {
 	overflow: hidden;
 	padding: 2em 0;
 }
-/*  define a posição, largura, margem, overflow e preenchimento */
+/*  define a posicao, largura, margem, overflow e preenchimento */
 
 .carousel-container {
 	display: flex;
 	transition: transform 0.5s ease;
 }
-/* Estiliza o elemento com a classe 'carousel-container': define o display flex e uma transição */
+/* Estiliza o elemento com a classe 'carousel-container': define o display flex e uma transicao */
 
 .carousel-item {
 	flex: 0 0 19%;
@@ -116,7 +116,7 @@ nav ul li a:hover {
 	border: 3px solid #d0aad1;
 	border-radius: 10px;
 }
-/* Estiliza os itens do carrossel: define a flexibilidade, preenchimento, alinhamento do texto, cor de fundo, margem, borda e raio do canto */
+/* define a flexibilidade, preenchimento, alinhamento do texto, cor de fundo, margem, borda e raio do canto */
 
 .carousel-item img {
 	width: 8em;
@@ -124,19 +124,19 @@ nav ul li a:hover {
 	margin-bottom: 10px;
 	border-radius: 10px;
 }
-/* Estiliza as imagens dos itens do carrossel: define a largura, altura, margem inferior e raio do canto */
+/* define a largura, altura, margem inferior e raio do canto */
 
 .carousel-item h3 {
 	font-size: 1.5em;
 	font-family: 'Quicksand', sans-serif;
 }
-/* Estiliza os títulos dos itens do carrossel: define o tamanho da fonte e a fonte 'Quicksand' */
+/*  define o tamanho da fonte e a fonte 'Quicksand' */
 
 .carousel-item p {
 	font-size: 0;
 	margin: 0;
 }
-/* Estiliza os parágrafos dos itens do carrossel: define o tamanho da fonte e a margem */
+/* Estiliza os paragrafos dos itens do carrossel: define o tamanho da fonte e a margem */
 
 .prev-button,
 .next-button {
@@ -152,17 +152,17 @@ nav ul li a:hover {
 	cursor: pointer;
 	z-index: 1;
 }
-/* define a posição, cor de fundo, cor do texto, borda, tamanho da fonte, preenchimento, cursor e camada z-index */
+/* define a posicao, cor de fundo, cor do texto, borda, tamanho da fonte, preenchimento, cursor e camada z-index */
 
 .prev-button {
 	left: 0;
 }
-/* define a posição à esquerda */
+/* define a posicao a esquerda */
 
 .next-button {
 	right: 0;
 }
-/*define a posição à direita */
+/*define a posicao a direita */
 
 #daily-deals {
 	background-color: #f0f0f0;
@@ -175,7 +175,7 @@ nav ul li a:hover {
 	grid-template-columns: repeat(3, 1fr);
 	gap: 30px;
 }
-/*  layout de grid com 3 colunas e espaçamento entre as células, usei grid pra deixar responsivo com mais facilidade */
+/*  layout de grid com 3 colunas e espaçamento entre as celulas, usei grid pra deixar responsivo com mais facilidade */
 
 .product {
 	border: 5px solid #ffd797;
@@ -192,7 +192,7 @@ nav ul li a:hover {
 	border-radius: 5%;
 	border: 3px solid #d0aad1;
 }
-/* define a largura máxima, altura automática, raio do canto, borda e raio do canto adicional */
+/* define a largura maxima, altura automatica, raio do canto, borda e raio do canto adicional */
 
 .product-name {
 	font-weight: bold;
@@ -264,13 +264,13 @@ footer h3 {
 }
 /* define a margem inferior */
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 870px) {
 	header img {
 		display: none;
 		visibility: hidden;
 		margin: 0cm;
 	}
-  /* apaga a imagem no cabeçalho em telas menores */
+  /* apaga a imagem no cabecalho em telas menores */
 
 	#daily-deals .product-grid {
 		display: grid;
@@ -320,17 +320,17 @@ footer h3 {
 	.carousel-container {
 		width: calc(100% - 40px);
 	}
-  /* Reduz a largura do carrossel container em telas médias */
+  /* Reduz a largura do carrossel container em telas medias */
 
 	.carousel-item {
 		width: calc(100% / 3);
 	}
-  /* Ajusta a largura dos itens do carrossel em telas médias */
+  /* Ajusta a largura dos itens do carrossel em telas medias */
 
 	.carousel-item:last-child {
 		margin-right: 20px;
 	}
-  /* Adiciona uma margem à direita para o último item do carrossel em telas médias */
+  /* Adiciona uma margem a direita para o ultimo item do carrossel em telas medias */
 }
 
 @media screen and (max-width: 600px) {
@@ -363,14 +363,9 @@ footer h3 {
 		margin: 0cm;
 	}
 
-	nav ul li a {
-		font-size: 0.6rem;
-	}
-
 	#carrinho {
-		display: none;
-		visibility: hidden;
-		margin: 0cm;
+		margin-right: 70px;
+		font-size: 10px;
 	}
 
 	header img {

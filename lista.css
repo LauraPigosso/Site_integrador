@@ -7,6 +7,7 @@ body {
     /* Aplicando a fonte como a fonte principal */
     background-color: #f0f0f0;
     /* Definindo a cor de fundo */
+    margin: 1em;
 }
 
 header {
@@ -40,7 +41,7 @@ h2 {
 .product-grid {
     display: grid;
     /* Exibindo os itens como um grid, usei grid pois é facil deixar responsivo */
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     /* 3 colunas com largura igual */
     gap: 30px;
     /* espacamento entre os itens */
@@ -141,16 +142,8 @@ h2 {
 }
 
 
+
 @media screen and (min-width: 900px) and (max-width: 1500px) {
-
-
-    .product-grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        /* Definindo 2 colunas com largura igual */
-        border-radius: 5%;
-        gap: 20px;
-    }
 
 
     .product img {

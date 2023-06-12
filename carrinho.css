@@ -88,6 +88,29 @@ nav ul li a {
   text-align: right; /* Alinha o texto à direita */
 }
 
+#finalizar {
+  padding: 17px 40px;
+  border-radius: 10px;
+  border: 0;
+  background-color: rgb(82, 201, 128);
+  letter-spacing: 1.5px;
+  font-size: 15px;
+  transition: all .3s ease;
+  box-shadow: rgb(46, 201, 80) 0px 10px 0px 0px;
+  color: hsl(0, 0%, 100%);
+ }
+ 
+ #finalizar:hover {
+  box-shadow: rgb(46, 201, 92) 0px 7px 0px 0px;
+ }
+ 
+ #finalizar:active {
+  background-color: rgb(56, 255, 83);
+  /*50, 168, 80*/
+  box-shadow: rgb(46, 201, 67) 0px 0px 0px 0px;
+  transform: translateY(5px);
+  transition: 200ms;
+ }
 
 footer {
   margin-top: 20px; 

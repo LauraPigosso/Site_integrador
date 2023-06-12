@@ -42,3 +42,19 @@ window.onload = function () {
     document.querySelector('#valor-total').textContent = '$' + totalValue.toFixed(2);
   }
 };
+
+function resetData() {
+  var products = document.querySelectorAll('.product');
+
+  products.forEach(function (product) {
+    var quantitySpan = product.querySelector('.quantidade');
+    quantitySpan.textContent = '0';
+  });
+
+
+  document.querySelector('#quantidade-total').textContent = '0';
+  document.querySelector('#valor-total').textContent = '$0.00';
+  quantity = 0; // Reiniciar a quantidade para zero
+
+  alert('SUA COMPRA FOI FINALIZADA, OBRIGADA POR COMPRAR');
+}
