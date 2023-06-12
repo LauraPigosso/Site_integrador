@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+/* Importa a fonte do Google Fonts */
 
 body {
   overflow-x: hidden;
   font-family: 'Quicksand', sans-serif;
-
 }
 
 .sidebar {
@@ -19,6 +19,7 @@ body {
   display: flex;
   justify-content: center;
 }
+/* define a área em um layout de grade chamada 'header', define o display como flex e centraliza o conteúdo horizontalmente */
 
 .header p {
   font-size: 1.5em;
@@ -27,14 +28,13 @@ body {
 .footer {
   grid-area: footer;
   font-size: 1em;
-
 }
 
 .footer h1 {
   grid-area: footer;
   font-size: 1em;
-
 }
+/* define a área em um layout de grade chamada 'footer' e define o tamanho da fonte como 1em */
 
 #botao {
   color: #000000;
@@ -45,26 +45,24 @@ body {
   border-radius: 0.5em;
   background: #b6e2e2;
   transition: all .3s;
-  box-shadow: 6px 6px 12px #81d1d1,
-        -6px -6px 12px #ffffff;
+  box-shadow: 6px 6px 12px #81d1d1, -6px -6px 12px #ffffff;
 }
+/* Estiliza um elemento com o ID 'botao': define a cor do texto como preto, a fonte 'Quicksand', o preenchimento (padding), a margem, o tamanho da fonte, o raio do canto, a cor de fundo, a transição e a sombra */
 
 #botap a {
   text-decoration: none;
   color: #272320;
 }
+/* remove a decoração do texto e define a cor como '#272320' */
 
 #botao:hover {
   background-color: #b7cccc;
-
 }
 
 #botao:active {
-  box-shadow: inset 4px 4px 12px #a5d8d8,
-        inset -4px -4px 12px #81d1d1;
-   }
-
-
+  box-shadow: inset 4px 4px 12px #a5d8d8, inset -4px -4px 12px #81d1d1;
+}
+/* quando está ativo (clique pressionado): define uma sombra interna */
 
 .wrapper {
   display: grid;
@@ -77,7 +75,7 @@ body {
   background-color: #fff;
   color: #d0e9e9;
 }
-
+/*configura um layout de grade: define a exibição como grade, espaçamento entre as células, colunas e áreas da grade, além de cores de fundo e de texto */
 
 .box {
   background-color: #ebc3c2;
@@ -85,9 +83,8 @@ body {
   border-radius: 5px;
   padding: 10px;
   font-size: 300%;
-
 }
-
+/* define a cor de fundo, cor do texto, raio do canto, preenchimento, e tamanho da fonte */
 
 .box img {
   background-color: #ebc3c2;
@@ -96,8 +93,8 @@ body {
   padding: 10px;
   font-size: 300%;
   border-radius: 30px;
-
 }
+/*define a cor de fundo, cor do texto, raio do canto, preenchimento, tamanho da fonte, e um raio de canto adicional */
 
 .header,
 .footer {
@@ -110,16 +107,14 @@ body {
     background-position: 0vw, 0vw;
   }
 }
-
+/*estilos específicos quando a largura da tela é maior ou igual a 968px */
 
 @media only screen and (max-width: 968px) {
   .foto {
     background-size: 63vw;
-
   }
 }
-
-
+/* estilos específicos quando a largura da tela é menor que 968px */
 
 @media only screen and (max-width: 778px) {
   .foto {
@@ -127,8 +122,7 @@ body {
     background-position: top;
   }
 }
-
-
+/* Aplica estilos específicos quando a largura da tela é menor que 778px*/
 
 .foto {
   position: relative;
@@ -136,7 +130,6 @@ body {
   width: 100%;
   background-image: url('b.jpg');
   background-attachment: fixed;
-
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
@@ -153,6 +146,7 @@ body {
   box-shadow: 10px 10px 400px -72px rgba(89, 32, 32, 1);
   border-radius: 20%;
 }
+/* define o alinhamento do texto, tamanho da fonte com base na largura da viewport, efeito de filtro de plano de fundo, sombra e raio do canto */
 
 .foto::before {
   content: "";
@@ -164,4 +158,5 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
   z-index: -1;
 }
+/* define sua posição, altura, largura, cor de fundo semitransparente e camada z-index */
 
