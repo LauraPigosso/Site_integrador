@@ -6,13 +6,13 @@
 	padding: 0;
 	box-sizing: border-box;
 }
-/* Define a configuração padrão para todos os elementos: margem, preenchimento e modelo de caixa */
+/* configuração padrão para todos os elementos: margem, preenchimento e modelo de caixa */
 
 body {
 	font-family: 'Quicksand', sans-serif;
 	background-color: #f0f0f0;
 }
-/* Estiliza o corpo do documento: define a fonte 'Quicksand' e a cor de fundo */
+/* define a fonte 'Quicksand' e a cor de fundo */
 
 header {
 	background-color: #d0e9e9;
@@ -21,7 +21,7 @@ header {
 	align-items: center;
 	justify-content: space-between;
 }
-/* Estiliza o elemento <header>: define a cor de fundo, raio do canto, display flex e alinhamento do conteúdo */
+/* define a cor de fundo, raio do canto, display flex e alinhamento do conteúdo */
 
 header img {
 	padding: 1em;
@@ -29,7 +29,7 @@ header img {
 	margin: 1.5em;
 	width: 200px;
 }
-/* Estiliza as imagens dentro do elemento <header>: define o preenchimento, posição, margem e largura */
+/*  define o preenchimento, posição, margem e largura */
 
 .container {
 	max-width: 70em;
@@ -38,30 +38,30 @@ header img {
 	align-items: center;
 	justify-content: space-between;
 }
-/* Estiliza o elemento com a classe 'container': define a largura máxima, margem, display flex e alinhamento do conteúdo */
+/* define a largura máxima, margem, display flex e alinhamento do conteúdo */
 
 nav ul {
 	list-style: none;
 	display: flex;
 }
-/* Estiliza a lista não ordenada (<ul>) dentro do elemento <nav>: remove os marcadores de lista e define o display flex */
+/* remove os marcadores de lista e define o display flex */
 
 nav ul li {
 	margin-right: 2rem;
 }
-/* Estiliza os itens da lista dentro do elemento <nav>: define a margem direita */
+/* define a margem direita */
 
 nav ul li a {
 	color: #272320;
 	font-size: clamp(1em, 1em + 0.5vw, 3em);
 	font-family: 'Quicksand', sans-serif;
 }
-/* Estiliza os links dentro dos itens da lista dentro do elemento <nav>: define a cor do texto, tamanho da fonte com base na largura da viewport e a fonte 'Quicksand' */
+/* define a cor do texto, tamanho da fonte com base na largura da viewport e a fonte 'Quicksand' */
 
 nav ul li a:hover {
 	text-decoration: underline;
 }
-/* Estiliza os links quando o cursor é colocado em cima (hover): define uma decoração de texto */
+/* define uma decoração de texto */
 
 #carrinho {
 	color: #d0e9e9;
@@ -74,23 +74,23 @@ nav ul li a:hover {
 	transition: all 0.3s;
 	box-shadow: 6px 6px 12px #81d1d1, -6px -6px 12px #ffffff;
 }
-/* Estiliza o elemento com o ID 'carrinho': define a cor do texto, fonte 'Quicksand', preenchimento, margem, tamanho da fonte, raio do canto, cor de fundo, transição e sombra */
+/* define a cor do texto, fonte 'Quicksand', preenchimento, margem, tamanho da fonte, raio do canto, cor de fundo, transição e sombra */
 
 #carrinho a {
 	text-decoration: none;
 	color: #272320;
 }
-/* Estiliza os links dentro do elemento com o ID 'carrinho': remove a decoração do texto e define a cor do texto */
+/* remove a decoração do texto e define a cor do texto */
 
 #carrinho:hover {
 	background-color: #b7cccc;
 }
-/* Estiliza o elemento com o ID 'carrinho' quando o cursor é colocado em cima (hover): define a cor de fundo */
+/* quando o cursor é colocado em cima define a cor de fundo */
 
 #carrinho:active {
 	box-shadow: inset 4px 4px 12px #a5d8d8, inset -4px -4px 12px #81d1d1;
 }
-/* Estiliza o elemento com o ID 'carrinho' quando está ativo (clique pressionado): define uma sombra interna */
+/* (clique pressionado): define uma sombra interna */
 
 .carousel {
 	position: relative;
@@ -99,7 +99,7 @@ nav ul li a:hover {
 	overflow: hidden;
 	padding: 2em 0;
 }
-/* Estiliza o elemento com a classe 'carousel': define a posição, largura, margem, overflow e preenchimento */
+/*  define a posição, largura, margem, overflow e preenchimento */
 
 .carousel-container {
 	display: flex;
@@ -152,30 +152,30 @@ nav ul li a:hover {
 	cursor: pointer;
 	z-index: 1;
 }
-/* Estiliza os botões de navegação do carrossel: define a posição, cor de fundo, cor do texto, borda, tamanho da fonte, preenchimento, cursor e camada z-index */
+/* define a posição, cor de fundo, cor do texto, borda, tamanho da fonte, preenchimento, cursor e camada z-index */
 
 .prev-button {
 	left: 0;
 }
-/* Estiliza o botão de navegação anterior do carrossel: define a posição à esquerda */
+/* define a posição à esquerda */
 
 .next-button {
 	right: 0;
 }
-/* Estiliza o botão de navegação seguinte do carrossel: define a posição à direita */
+/*define a posição à direita */
 
 #daily-deals {
 	background-color: #f0f0f0;
 	padding: 1em;
 }
-/* Estiliza o elemento com o ID 'daily-deals': define a cor de fundo e o preenchimento */
+/* cor de fundo e o preenchimento */
 
 .product-grid {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	gap: 30px;
 }
-/* Estiliza o elemento com a classe 'product-grid': define o layout de grade com 3 colunas e espaçamento entre as células */
+/*  layout de grid com 3 colunas e espaçamento entre as células, usei grid pra deixar responsivo com mais facilidade */
 
 .product {
 	border: 5px solid #ffd797;
@@ -184,7 +184,7 @@ nav ul li a:hover {
 	text-align: center;
 	background-color: #f0f0f0;
 }
-/* Estiliza o elemento com a classe 'product': define a borda, raio do canto, preenchimento, alinhamento do texto e cor de fundo */
+/*  define a borda, raio do canto, preenchimento, alinhamento do texto e cor de fundo */
 
 .product img {
 	max-width: 100%;
@@ -192,7 +192,7 @@ nav ul li a:hover {
 	border-radius: 5%;
 	border: 3px solid #d0aad1;
 }
-/* Estiliza as imagens dentro do elemento com a classe 'product': define a largura máxima, altura automática, raio do canto, borda e raio do canto adicional */
+/* define a largura máxima, altura automática, raio do canto, borda e raio do canto adicional */
 
 .product-name {
 	font-weight: bold;
@@ -200,18 +200,17 @@ nav ul li a:hover {
 	font-family: 'Quicksand', sans-serif;
 	font-size: 2em;
 }
-/* Estiliza os nomes dos produtos: define o peso da fonte, margem superior, fonte 'Quicksand' e tamanho da fonte */
 
 .product-price {
 	color: #888;
 	font-size: 1em;
 }
-/* Estiliza os preços dos produtos: define a cor do texto e o tamanho da fonte */
+/* cor do texto e o tamanho da fonte */
 
 .product-button:hover {
 	background-color: #f2aaae;
 }
-/* Estiliza os botões dos produtos quando o cursor é colocado em cima (hover): define a cor de fundo */
+/* quando o cursor é colocado em cima define a cor de fundo */
 
 form {
 	display: flex;
@@ -219,7 +218,7 @@ form {
 	justify-content: center;
 	margin: 50px 0;
 }
-/* Estiliza os formulários: define o display flex, quebra de linha, alinhamento e margem */
+/* define o display flex, quebra de linha, alinhamento e margem */
 
 form input[type="email"] {
 	padding: 10px;
@@ -227,7 +226,7 @@ form input[type="email"] {
 	border: none;
 	flex-grow: 1;
 }
-/* Estiliza o campo de entrada de email nos formulários: define o preenchimento, raio do canto da esquerda, borda, flexibilidade e crescimento */
+/* define o preenchimento, raio do canto da esquerda, borda, flexibilidade e crescimento */
 
 form button[type="submit"] {
 	background-color: #d0aad1;
@@ -237,12 +236,11 @@ form button[type="submit"] {
 	border-radius: 0 5px 5px 0;
 	cursor: pointer;
 }
-/* Estiliza o botão de envio nos formulários: define a cor de fundo, cor do texto, borda, preenchimento, raio do canto da direita e cursor */
+/* define a cor de fundo, cor do texto, borda, preenchimento, raio do canto da direita e tipo cursor */
 
 form button[type="submit"]:hover {
 	background-color: #f2aaae;
 }
-/* Estiliza o botão de envio nos formulários quando o cursor é colocado em cima (hover): define a cor de fundo */
 
 footer {
 	background-color: #f2aaae;
@@ -259,12 +257,12 @@ footer .container {
 	justify-content: space-between;
 	padding: 5px;
 }
-/* Estiliza o elemento com a classe 'container' dentro do <footer>: define o display flex, quebra de linha, alinhamento e preenchimento */
+/* define o display flex, quebra de linha, alinhamento e preenchimento */
 
 footer h3 {
 	margin-bottom: 20px;
 }
-/* Estiliza os títulos dentro do <footer>: define a margem inferior */
+/* define a margem inferior */
 
 @media screen and (max-width: 770px) {
 	header img {
@@ -272,13 +270,13 @@ footer h3 {
 		visibility: hidden;
 		margin: 0cm;
 	}
-  /* Esconde a imagem no cabeçalho em telas menores */
+  /* apaga a imagem no cabeçalho em telas menores */
 
 	#daily-deals .product-grid {
 		display: grid;
 		grid-template-columns: repeat(1, 1fr);
 	}
-  /* Altera o layout dos produtos diários para uma coluna em telas menores */
+  /* Altera o layout dos produtos em promocao para uma coluna em telas menores que 770*/
 
 	.carousel-item img {
 		width: 6em;
@@ -292,21 +290,20 @@ footer h3 {
 		visibility: hidden;
 		margin: 0cm;
   }
-  /* Esconde o elemento com o ID 'pro' em telas menores */
+  /* apaga o botao de promocoes em telas menores */
 
   #sobre {
     display: none;
 		visibility: hidden;
 		margin: 0cm;
   }
-  /* Esconde o elemento com o ID 'sobre' em telas menores */
-
+/* apaga o botao de sobre nos em telas menores */
   #con {
     display: none;
 		visibility: hidden;
 		margin: 0cm;
   }
-  /* Esconde o elemento com o ID 'con' em telas menores */
+/* apaga o botao de contato nos em telas menores */
 
   header {
 	background-color: #d0e9e9;
@@ -342,7 +339,7 @@ footer h3 {
 		visibility: hidden;
 		margin: 0cm;
 	}
-  /* Esconde o título no elemento com o ID 'newsletter' em telas menores */
+  /* apaga a mensagem do forms em telas menores */
 }
 
 @media screen and (max-width: 420px) {
@@ -381,5 +378,5 @@ footer h3 {
 		visibility: hidden;
 		margin: 0cm;
 	}
-  /* Esconde o carrinho de compras, a imagem no cabeçalho e ajusta o tamanho da fonte dos links em telas muito pequenas */
+  /* apaga o carrinho de compras, a imagem no cabeçalho e ajusta o tamanho da fonte dos links em telas muito pequenas */
 }
