@@ -16,7 +16,7 @@ header {
     align-items: center;
     /* Centralizando verticalmente */
     justify-content: space-between;
-    /* Distribuindo o espaco igualmente entre os itens do header */
+    /* Distribuindo o espaco igualmente entre os itens */
 }
 
 h1 {
@@ -30,22 +30,20 @@ h1 {
 h2 {
     text-align: center;
     font-size: 2em;
-    /* Definindo o tamanho da fonte */
-
     font-family: 'Quicksand', sans-serif;
     text-decoration: none;
-    /* Removendo a decoracao do texto (no caso, nenhum sublinhado) */
+    /* Removendo a decoracao do texto */
     color: #000000;
 
 }
 
 .product-grid {
     display: grid;
-    /* Exibindo os itens como um grid */
+    /* Exibindo os itens como um grid, usei grid pois é facil deixar responsivo */
     grid-template-columns: repeat(3, 1fr);
-    /* Definindo 3 colunas com largura igual */
+    /* 3 colunas com largura igual */
     gap: 30px;
-    /* Definindo o espacamento entre os itens */
+    /* espacamento entre os itens */
 }
 
 .product {
@@ -60,9 +58,9 @@ h2 {
 
 .product img {
     max-width: 100%;
-    /* Definindo a largura maxima da imagem como 100% */
+    /* largura maxima da imagem como 100% */
     height: auto;
-    /* Mantendo a proporcao de altura da imagem */
+    /* mantendo a proporcao de altura da imagem */
     border-radius: 5%;
     border: 3px solid #d0aad1;
 }
@@ -83,21 +81,19 @@ h2 {
 
 .btn {
     position: relative;
-    /* posicao como relativa */
     font-size: 17px;
     text-transform: uppercase;
     /* Convertendo o texto em letras maiusculas */
     text-decoration: none;
     padding: 1em 2.5em;
-    /* Definindo o preenchimento interno do botao */
+    /* preenchimento interno do botao */
     display: inline-block;
-    /* Exibindo o botao como um elemento em linha */
+    /* botao como um elemento em linha */
     border-radius: 6em;
     transition: all .2s;
     /* Adicionando uma transicao de 0.2 segundos */
     border: none;
     font-weight: 500;
-    /* Definindo o peso da fonte como 500 */
     color: black;
     background-color: white;
 }
@@ -105,9 +101,9 @@ h2 {
 /* para o botão ao passar o mouse */
 .btn:hover {
     transform: translateY(-3px);
-    /* Movendo o botão para cima 3 pixels */
+    /* movendo o botão para cima 3 pixels */
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    /* Adicionando uma sombra ao botão */
+    /* sombra ao botão */
 }
 
 /* para o botão ao ser clicado */
@@ -124,7 +120,6 @@ h2 {
     width: 100%;
     border-radius: 100px;
     position: absolute;
-    /* posicao como absoluta */
     top: 0;
     left: 0;
     z-index: -1;
@@ -140,7 +135,7 @@ h2 {
 /* efeito de fundo do botão ao passar o mouse */
 .btn:hover::after {
     transform: scaleX(1.4) scaleY(1.6);
-    /* Aumentando a escala horizontal e vertical do elemento */
+    /* aumentando a escala horizontal e vertical do elemento */
     opacity: 0;
     /* elemento transparente */
 }
