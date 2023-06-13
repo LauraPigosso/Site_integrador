@@ -119,7 +119,7 @@ nav ul li a:hover {
 /* define a flexibilidade, preenchimento, alinhamento do texto, cor de fundo, margem, borda e raio do canto */
 
 .carousel-item img {
-	width: 8em;
+	width: 10em;
 	height: auto;
 	margin-bottom: 10px;
 	border-radius: 10px;
