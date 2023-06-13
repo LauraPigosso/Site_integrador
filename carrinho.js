@@ -56,5 +56,19 @@ function resetData() {
   document.querySelector('#valor-total').textContent = '$0.00';
   quantity = 0; // Reiniciar a quantidade para zero
 
-  alert('SUA COMPRA FOI FINALIZADA, OBRIGADA POR COMPRAR');
+
+  Swal.fire({ 
+    title: 'SUA COMPRA FOI FINALIZADA, OBRIGADA POR COMPRAR!',
+    width: 600,
+    padding: '3em',
+    color: '#716add',
+    backdrop: `
+      rgba(0,0,123,0.4)
+      url("https://i.pinimg.com/originals/02/b1/d5/02b1d5da9088c69b2e4550a1dcfde9fa.gif")
+      left top
+      no-repeat
+    `
+  }).then(function() {
+    window.location.reload(true)
+});
 }
