@@ -26,7 +26,7 @@ if (alertTrigger) {
   // Verifica se o elemento 'alertTrigger' existe
 
   alertTrigger.addEventListener('click', () => {
-    appendAlert('OBRIGADA POR VER MEU SITE, VOCÊ É MUITO ESPECIAL')
+    appendAlert('OBRIGADA POR VER MEU SITE,VC É MUITO ESPECIAL')
   })
   // Adiciona um ouvinte de evento de clique ao elemento 'alertTrigger' que chama a função 'appendAlert' com uma mensagem 
 }
