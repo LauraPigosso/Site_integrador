@@ -43,32 +43,34 @@ window.onload = function () {
   }
 };
 
+// Função para redefinir os dados da compra
 function resetData() {
   var products = document.querySelectorAll('.product');
 
+  // Iterando sobre cada produto
   products.forEach(function (product) {
     var quantitySpan = product.querySelector('.quantidade');
-    quantitySpan.textContent = '0';
+    quantitySpan.textContent = '0'; // Colocando a quantidade de cada produto de volta para zero
   });
 
-
+  // Atualizando os elementos que exibem a quantidade total e o valor total
   document.querySelector('#quantidade-total').textContent = '0';
   document.querySelector('#valor-total').textContent = '$0.00';
   quantity = 0; // Reiniciar a quantidade para zero
 
-
-  Swal.fire({ 
+  // Exibindo uma mensagem de compra finalizada
+  Swal.fire({
     title: 'SUA COMPRA FOI FINALIZADA, OBRIGADA POR COMPRAR!',
     width: 600,
     padding: '3em',
     color: '#716add',
     backdrop: `
       rgba(0,0,123,0.4)
-      url("https://i.pinimg.com/originals/02/b1/d5/02b1d5da9088c69b2e4550a1dcfde9fa.gif")
+      url("https://i.pinimg.com/originals/02/b1/d5/02b1d5da9088c69b2e4550a1dcfde9fa.gif")  
       left top
       no-repeat
     `
   }).then(function() {
-    window.location.reload(true)
-});
+    window.location.reload(true); // Recarregar a página
+  });
 }
